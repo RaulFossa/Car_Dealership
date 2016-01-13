@@ -27,12 +27,15 @@ def crosstrek_model():
     print("-In-Vehicle Technology")
 
 def thank_you():
-    print("Thank you for shopping us")
+    print("Thank you for shopping us \n")
 
-print("Hello and Welcome to SUBARU")
+print("-----------------------------------------")
+print("Hello and Welcome to the SUBARU CarDealer") 
+print("----------------------------------------- \n")
+
 init_ans = input("Are you ready to choose your new Car? ")
 
-## a fun game with user in case the answer is "NO"
+## a fun game with user if the answer is "NO"
 x = 0
 while init_ans.upper() == "NO":
     print("really? I am going to ask you again!") 
@@ -40,8 +43,8 @@ while init_ans.upper() == "NO":
     init_ans = input("Are you ready to choose your new Car? ")
 
 print(" ")
-print("Awesome! SUBARU CarDealer offers 3 Brand New 2016 Models.")
-print("Impreza, BRZ and Crosstrek \n")
+print("Awesome! SUBARU offers 3 Brand New Models. \n")
+print("   *** Impreza, BRZ and Crosstrek *** \n")
 
 car_model = input("Which car SUBARU model would you like to buy? ")
 
@@ -50,13 +53,14 @@ if car_model.upper() == "IMPREZA":
     impreza_model() ## call function for impreza_model()
     print(" ")
     dealer_fee = float(input("Please enter the Dealer Fee for this model: $"))
-    ask_tax = float(input("Please enter the tax percentage: "))
+    ask_tax = float(input("Please enter the tax of percentage: "))
     subtotal = 18395 + dealer_fee
     tax = subtotal * ask_tax
     total_car = subtotal + tax
-    print("Your Brand New SUBARU Impreza 2016 has a total of $", "%.2f" % total_car) 
+    print("Your Brand New SUBARU Impreza 2016 has a total of $", "%.2f" % total_car, "\n") 
+    thank_you()
 
-if car_model.upper() == "BRZ":
+elif car_model.upper() == "BRZ":
     print(" ")
     brz_model() ## call function for brz_model()
     print(" ")
@@ -65,9 +69,10 @@ if car_model.upper() == "BRZ":
     subtotal = 25395 + dealer_fee
     tax = subtotal * ask_tax
     total_car = subtotal + tax
-    print("Your Brand New SUBARU BRZ Sport 2016 has a total of $", "%.2f" % total_car)
+    print("Your Brand New SUBARU BRZ Sport 2016 has a total of $", "%.2f" % total_car, "\n")
+    thank_you()
 
-if car_model.upper() == "CROSSTREK":
+elif car_model.upper() == "CROSSTREK":
     print(" ")
     crosstrek_model() ## call function for crosstrek_model()
     print(" ")
@@ -76,7 +81,10 @@ if car_model.upper() == "CROSSTREK":
     subtotal = 30395 + dealer_fee
     tax = subtotal * ask_tax
     total_car = subtotal + tax
-    print("Your Brand New SUBARU Crosstrek Hybrid 2016 has a total of $", "%.2f" % total_car)
+    print("Your Brand New SUBARU Crosstrek Hybrid 2016 has a total of $", "%.2f" % total_car, "\n")
+    thank_you()
+
+
 
    
 
