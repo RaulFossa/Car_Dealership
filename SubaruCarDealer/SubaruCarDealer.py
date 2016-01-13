@@ -4,7 +4,7 @@
 
 def impreza_model():
     print("-SUBARU Impreza 2016 \n")
-    print("-Price: starting at $18,295")
+    print("-Price: starting at $18,395")
     print("-Symmetrical All-Wheel Drive")
     print("-37-MPG Fuel Efficiency")
     print("-5 Door Body Style")
@@ -26,6 +26,9 @@ def crosstrek_model():
     print("-Power Moonroof")
     print("-In-Vehicle Technology")
 
+def thank_you():
+    print("Thank you for shopping us")
+
 print("Hello and Welcome to SUBARU")
 init_ans = input("Are you ready to choose your new Car? ")
 
@@ -44,15 +47,28 @@ car_model = input("Which car SUBARU model would you like to buy? ")
 
 if car_model.upper() == "IMPREZA":
     print(" ")
-    impreza_model()
+    impreza_model() ## call function for impreza_model()
     print(" ")
     dealer_fee = float(input("Please enter the Dealer Fee for this model: $"))
     ask_tax = float(input("Please enter the tax percentage: "))
-    subtotal = 18295 + dealer_fee
+    subtotal = 18395 + dealer_fee
     tax = subtotal * ask_tax
     total_car = subtotal + tax
     print("Your Brand New SUBARU Impreza 2016 has a total of $", "%.2f" % total_car) 
-    
+
+if car_model.upper() == "BRZ":
+    print(" ")
+    brz_model() ## call function for brz_model()
+    print(" ")
+    dealer_fee = float(input("Please enter the Dealer Fee for this model: $"))
+    ask_tax = float(input("Please enter the tax percentage: "))
+    subtotal = 25395 + dealer_fee
+    tax = subtotal * ask_tax
+    total_car = subtotal + tax
+    print("Your Brand New SUBARU BRZ Sport 2016 has a total of $", "%.2f" % total_car)
+
+
+   
 
 
 
