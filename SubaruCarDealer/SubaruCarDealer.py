@@ -19,7 +19,7 @@ def brz_model():
     print("-Sport-Design Instrumentation")
 
 def crosstrek_model():
-    print("-SUBARU Crosstrek 2016")
+    print("-SUBARU Crosstrek Hybrid 2016")
     print("-Price: starting at $30,395")
     print("-Flexible Integrated Roof Rails")
     print("-42-MPG Fuel Efficiency")
@@ -67,6 +67,16 @@ if car_model.upper() == "BRZ":
     total_car = subtotal + tax
     print("Your Brand New SUBARU BRZ Sport 2016 has a total of $", "%.2f" % total_car)
 
+if car_model.upper() == "CROSSTREK":
+    print(" ")
+    crosstrek_model() ## call function for crosstrek_model()
+    print(" ")
+    dealer_fee = float(input("Please enter the Dealer Fee for this model: $"))
+    ask_tax = float(input("Please enter the tax percentage: "))
+    subtotal = 30395 + dealer_fee
+    tax = subtotal * ask_tax
+    total_car = subtotal + tax
+    print("Your Brand New SUBARU Crosstrek Hybrid 2016 has a total of $", "%.2f" % total_car)
 
    
 
