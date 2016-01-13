@@ -19,16 +19,21 @@ def brz_model():
     print("Sport-Design Instrumentation")
 
 def crosstrek_model():
-    print("SUBARU BRZ 2016")
+    print("SUBARU Crosstrek 2016")
     print("Price: starting at $30,395")
     print("Flexible Integrated Roof Rails")
-    print("37-MPG Fuel Efficiency")
+    print("42-MPG Fuel Efficiency")
     print("Power Moonroof")
     print("In-Vehicle Technology")
 
-def main()
+print("Hello and Welcome to SUBARU")
+init_ans = input("Are you ready to choose your new Car? ")
 
-main()
+x = 0
+while init_ans.upper() == "NO":
+    print("really? I am going to ask you again!") # a fun game with user in case the answer is "NO"
+    x += 1
+    init_ans = input("Are you ready to choose your new Car? ")
 
 
 
